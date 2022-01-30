@@ -1,0 +1,6 @@
+framework module Pods_HospitalHealerTests {
+  umbrella header "Pods-HospitalHealerTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

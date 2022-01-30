@@ -1,0 +1,834 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		049367CE27A13F0300B4723C /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367CD27A13F0300B4723C /* DateView.swift */; };
+		049367D127A141F600B4723C /* KDCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 049367D027A141F600B4723C /* KDCalendar */; };
+		049367D427A1450200B4723C /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 049367D327A1450200B4723C /* ElegantCalendar */; };
+		049367D627A145BC00B4723C /* ExampleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367D527A145BC00B4723C /* ExampleCalendarView.swift */; };
+		049367D827A145D700B4723C /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367D727A145D700B4723C /* Visit.swift */; };
+		049367DA27A145E700B4723C /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367D927A145E700B4723C /* VisitCell.swift */; };
+		049367DC27A145F700B4723C /* VisitPreviewConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367DB27A145F700B4723C /* VisitPreviewConstants.swift */; };
+		049367DE27A1460B00B4723C /* VisitsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367DD27A1460B00B4723C /* VisitsListView.swift */; };
+		049367E027A1464300B4723C /* ChangeThemeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367DF27A1464300B4723C /* ChangeThemeButton.swift */; };
+		049367E227A1466100B4723C /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367E127A1466100B4723C /* Date+Additions.swift */; };
+		049367E427A146B300B4723C /* LightDarkThemePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367E327A146B300B4723C /* LightDarkThemePreview.swift */; };
+		049367E627A146C300B4723C /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049367E527A146C300B4723C /* Date+Additions.swift */; };
+		04D3D07F276A122A005AF98A /* HospitalHealerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3D07E276A122A005AF98A /* HospitalHealerApp.swift */; };
+		04D3D081276A122A005AF98A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3D080276A122A005AF98A /* ContentView.swift */; };
+		04D3D083276A122C005AF98A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D3D082276A122C005AF98A /* Assets.xcassets */; };
+		04D3D086276A122C005AF98A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04D3D085276A122C005AF98A /* Preview Assets.xcassets */; };
+		04D3D090276A122C005AF98A /* HospitalHealerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3D08F276A122C005AF98A /* HospitalHealerTests.swift */; };
+		04D3D09A276A122C005AF98A /* HospitalHealerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3D099276A122C005AF98A /* HospitalHealerUITests.swift */; };
+		04D3D09C276A122C005AF98A /* HospitalHealerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D3D09B276A122C005AF98A /* HospitalHealerUITestsLaunchTests.swift */; };
+		04D83349277FA05A00996295 /* GetDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D83348277FA05A00996295 /* GetDateView.swift */; };
+		04D8334B277FA35100996295 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8334A277FA35100996295 /* SignInView.swift */; };
+		04D8334D277FABC400996295 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04D8334C277FABC400996295 /* Api.swift */; };
+		04EAF402279655F7006AA149 /* showdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EAF401279655F7006AA149 /* showdate.swift */; };
+		04EF5B902797EA030014035D /* adminloginpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF5B8F2797EA030014035D /* adminloginpanel.swift */; };
+		04EF5B922797EA670014035D /* adminpanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EF5B912797EA670014035D /* adminpanel.swift */; };
+		0CAB1A40511E089D6CA83AEC /* Pods_HospitalHealer_HospitalHealerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42BDE23262A3CDE26D664013 /* Pods_HospitalHealer_HospitalHealerUITests.framework */; };
+		D4BE09189E998B991F5BF484 /* Pods_HospitalHealerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6046B0A230EF7D9010AACB06 /* Pods_HospitalHealerTests.framework */; };
+		FDA249A521FE406EDF619EC6 /* Pods_HospitalHealer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 208BF02111C4D74DA844E091 /* Pods_HospitalHealer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		04D3D08C276A122C005AF98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D3D073276A122A005AF98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D3D07A276A122A005AF98A;
+			remoteInfo = HospitalHealer;
+		};
+		04D3D096276A122C005AF98A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04D3D073276A122A005AF98A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04D3D07A276A122A005AF98A;
+			remoteInfo = HospitalHealer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0438AB1E278C38C70081A18D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		049367CD27A13F0300B4723C /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		049367D527A145BC00B4723C /* ExampleCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExampleCalendarView.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Calendar with Accessory View/ExampleCalendarView.swift"; sourceTree = "<group>"; };
+		049367D727A145D700B4723C /* Visit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Visit.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Calendar with Accessory View/Visit.swift"; sourceTree = "<group>"; };
+		049367D927A145E700B4723C /* VisitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitCell.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Calendar with Accessory View/VisitCell.swift"; sourceTree = "<group>"; };
+		049367DB27A145F700B4723C /* VisitPreviewConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitPreviewConstants.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Calendar with Accessory View/VisitPreviewConstants.swift"; sourceTree = "<group>"; };
+		049367DD27A1460B00B4723C /* VisitsListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VisitsListView.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Calendar with Accessory View/VisitsListView.swift"; sourceTree = "<group>"; };
+		049367DF27A1464300B4723C /* ChangeThemeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChangeThemeButton.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Shared/ChangeThemeButton.swift"; sourceTree = "<group>"; };
+		049367E127A1466100B4723C /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Additions.swift"; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Shared/Date+Additions.swift"; sourceTree = "<group>"; };
+		049367E327A146B300B4723C /* LightDarkThemePreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LightDarkThemePreview.swift; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Shared/LightDarkThemePreview.swift"; sourceTree = "<group>"; };
+		049367E527A146C300B4723C /* Date+Additions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Date+Additions.swift"; path = "../../../../Downloads/ElegantCalendar-master/Example/Example/Shared/Date+Additions.swift"; sourceTree = "<group>"; };
+		04D3D07B276A122A005AF98A /* HospitalHealer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalHealer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D3D07E276A122A005AF98A /* HospitalHealerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalHealerApp.swift; sourceTree = "<group>"; };
+		04D3D080276A122A005AF98A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04D3D082276A122C005AF98A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04D3D085276A122C005AF98A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04D3D08B276A122C005AF98A /* HospitalHealerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HospitalHealerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D3D08F276A122C005AF98A /* HospitalHealerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalHealerTests.swift; sourceTree = "<group>"; };
+		04D3D095276A122C005AF98A /* HospitalHealerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HospitalHealerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		04D3D099276A122C005AF98A /* HospitalHealerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalHealerUITests.swift; sourceTree = "<group>"; };
+		04D3D09B276A122C005AF98A /* HospitalHealerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalHealerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		04D83348277FA05A00996295 /* GetDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDateView.swift; sourceTree = "<group>"; };
+		04D8334A277FA35100996295 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		04D8334C277FABC400996295 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		04EAF401279655F7006AA149 /* showdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showdate.swift; sourceTree = "<group>"; };
+		04EF5B8F2797EA030014035D /* adminloginpanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminloginpanel.swift; sourceTree = "<group>"; };
+		04EF5B912797EA670014035D /* adminpanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = adminpanel.swift; sourceTree = "<group>"; };
+		208BF02111C4D74DA844E091 /* Pods_HospitalHealer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HospitalHealer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DA3C07C1617F37DABB0BCD /* Pods-HospitalHealer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalHealer.debug.xcconfig"; path = "Target Support Files/Pods-HospitalHealer/Pods-HospitalHealer.debug.xcconfig"; sourceTree = "<group>"; };
+		42BDE23262A3CDE26D664013 /* Pods_HospitalHealer_HospitalHealerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HospitalHealer_HospitalHealerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6046B0A230EF7D9010AACB06 /* Pods_HospitalHealerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HospitalHealerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65E2929B2D8A1EA9916C2F5A /* Pods-HospitalHealer-HospitalHealerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalHealer-HospitalHealerUITests.debug.xcconfig"; path = "Target Support Files/Pods-HospitalHealer-HospitalHealerUITests/Pods-HospitalHealer-HospitalHealerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EA6F20BDDABAB9E76172554 /* Pods-HospitalHealerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalHealerTests.debug.xcconfig"; path = "Target Support Files/Pods-HospitalHealerTests/Pods-HospitalHealerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9AE95A2D818181D0C461A8E1 /* Pods-HospitalHealerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalHealerTests.release.xcconfig"; path = "Target Support Files/Pods-HospitalHealerTests/Pods-HospitalHealerTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0752CAA8779286438DB2F1F /* Pods-HospitalHealer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalHealer.release.xcconfig"; path = "Target Support Files/Pods-HospitalHealer/Pods-HospitalHealer.release.xcconfig"; sourceTree = "<group>"; };
+		E6D70FE61F7F7E326DAF5DCA /* Pods-HospitalHealer-HospitalHealerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HospitalHealer-HospitalHealerUITests.release.xcconfig"; path = "Target Support Files/Pods-HospitalHealer-HospitalHealerUITests/Pods-HospitalHealer-HospitalHealerUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		04D3D078276A122A005AF98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				049367D427A1450200B4723C /* ElegantCalendar in Frameworks */,
+				FDA249A521FE406EDF619EC6 /* Pods_HospitalHealer.framework in Frameworks */,
+				049367D127A141F600B4723C /* KDCalendar in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D3D088276A122C005AF98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4BE09189E998B991F5BF484 /* Pods_HospitalHealerTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D3D092276A122C005AF98A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CAB1A40511E089D6CA83AEC /* Pods_HospitalHealer_HospitalHealerUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04D3D072276A122A005AF98A = {
+			isa = PBXGroup;
+			children = (
+				04D3D07D276A122A005AF98A /* HospitalHealer */,
+				04D3D08E276A122C005AF98A /* HospitalHealerTests */,
+				04D3D098276A122C005AF98A /* HospitalHealerUITests */,
+				04D3D07C276A122A005AF98A /* Products */,
+				F296DEE1267F4DF03C549A10 /* Pods */,
+				0D0B9086E60FF36471CF372E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		04D3D07C276A122A005AF98A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04D3D07B276A122A005AF98A /* HospitalHealer.app */,
+				04D3D08B276A122C005AF98A /* HospitalHealerTests.xctest */,
+				04D3D095276A122C005AF98A /* HospitalHealerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		04D3D07D276A122A005AF98A /* HospitalHealer */ = {
+			isa = PBXGroup;
+			children = (
+				0438AB1E278C38C70081A18D /* Info.plist */,
+				049367D727A145D700B4723C /* Visit.swift */,
+				049367DB27A145F700B4723C /* VisitPreviewConstants.swift */,
+				049367DD27A1460B00B4723C /* VisitsListView.swift */,
+				049367D927A145E700B4723C /* VisitCell.swift */,
+				049367D527A145BC00B4723C /* ExampleCalendarView.swift */,
+				04D3D07E276A122A005AF98A /* HospitalHealerApp.swift */,
+				04D3D080276A122A005AF98A /* ContentView.swift */,
+				04D83348277FA05A00996295 /* GetDateView.swift */,
+				049367E127A1466100B4723C /* Date+Additions.swift */,
+				04EAF401279655F7006AA149 /* showdate.swift */,
+				049367DF27A1464300B4723C /* ChangeThemeButton.swift */,
+				04D8334A277FA35100996295 /* SignInView.swift */,
+				04EF5B8F2797EA030014035D /* adminloginpanel.swift */,
+				049367E527A146C300B4723C /* Date+Additions.swift */,
+				049367E327A146B300B4723C /* LightDarkThemePreview.swift */,
+				04EF5B912797EA670014035D /* adminpanel.swift */,
+				049367CD27A13F0300B4723C /* DateView.swift */,
+				04D8334C277FABC400996295 /* Api.swift */,
+				04D3D082276A122C005AF98A /* Assets.xcassets */,
+				04D3D084276A122C005AF98A /* Preview Content */,
+			);
+			path = HospitalHealer;
+			sourceTree = "<group>";
+		};
+		04D3D084276A122C005AF98A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04D3D085276A122C005AF98A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04D3D08E276A122C005AF98A /* HospitalHealerTests */ = {
+			isa = PBXGroup;
+			children = (
+				04D3D08F276A122C005AF98A /* HospitalHealerTests.swift */,
+			);
+			path = HospitalHealerTests;
+			sourceTree = "<group>";
+		};
+		04D3D098276A122C005AF98A /* HospitalHealerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04D3D099276A122C005AF98A /* HospitalHealerUITests.swift */,
+				04D3D09B276A122C005AF98A /* HospitalHealerUITestsLaunchTests.swift */,
+			);
+			path = HospitalHealerUITests;
+			sourceTree = "<group>";
+		};
+		0D0B9086E60FF36471CF372E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				208BF02111C4D74DA844E091 /* Pods_HospitalHealer.framework */,
+				42BDE23262A3CDE26D664013 /* Pods_HospitalHealer_HospitalHealerUITests.framework */,
+				6046B0A230EF7D9010AACB06 /* Pods_HospitalHealerTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F296DEE1267F4DF03C549A10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28DA3C07C1617F37DABB0BCD /* Pods-HospitalHealer.debug.xcconfig */,
+				E0752CAA8779286438DB2F1F /* Pods-HospitalHealer.release.xcconfig */,
+				65E2929B2D8A1EA9916C2F5A /* Pods-HospitalHealer-HospitalHealerUITests.debug.xcconfig */,
+				E6D70FE61F7F7E326DAF5DCA /* Pods-HospitalHealer-HospitalHealerUITests.release.xcconfig */,
+				7EA6F20BDDABAB9E76172554 /* Pods-HospitalHealerTests.debug.xcconfig */,
+				9AE95A2D818181D0C461A8E1 /* Pods-HospitalHealerTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		04D3D07A276A122A005AF98A /* HospitalHealer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D3D09F276A122C005AF98A /* Build configuration list for PBXNativeTarget "HospitalHealer" */;
+			buildPhases = (
+				F459AB7022D44B27D4E97A22 /* [CP] Check Pods Manifest.lock */,
+				04D3D077276A122A005AF98A /* Sources */,
+				04D3D078276A122A005AF98A /* Frameworks */,
+				04D3D079276A122A005AF98A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HospitalHealer;
+			packageProductDependencies = (
+				049367D027A141F600B4723C /* KDCalendar */,
+				049367D327A1450200B4723C /* ElegantCalendar */,
+			);
+			productName = HospitalHealer;
+			productReference = 04D3D07B276A122A005AF98A /* HospitalHealer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		04D3D08A276A122C005AF98A /* HospitalHealerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D3D0A2276A122C005AF98A /* Build configuration list for PBXNativeTarget "HospitalHealerTests" */;
+			buildPhases = (
+				D62FA792B4557412B3155AA8 /* [CP] Check Pods Manifest.lock */,
+				04D3D087276A122C005AF98A /* Sources */,
+				04D3D088276A122C005AF98A /* Frameworks */,
+				04D3D089276A122C005AF98A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D3D08D276A122C005AF98A /* PBXTargetDependency */,
+			);
+			name = HospitalHealerTests;
+			productName = HospitalHealerTests;
+			productReference = 04D3D08B276A122C005AF98A /* HospitalHealerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		04D3D094276A122C005AF98A /* HospitalHealerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04D3D0A5276A122C005AF98A /* Build configuration list for PBXNativeTarget "HospitalHealerUITests" */;
+			buildPhases = (
+				4391B93F862ACDE74C51BC84 /* [CP] Check Pods Manifest.lock */,
+				04D3D091276A122C005AF98A /* Sources */,
+				04D3D092276A122C005AF98A /* Frameworks */,
+				04D3D093276A122C005AF98A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				04D3D097276A122C005AF98A /* PBXTargetDependency */,
+			);
+			name = HospitalHealerUITests;
+			productName = HospitalHealerUITests;
+			productReference = 04D3D095276A122C005AF98A /* HospitalHealerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		04D3D073276A122A005AF98A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					04D3D07A276A122A005AF98A = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					04D3D08A276A122C005AF98A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 04D3D07A276A122A005AF98A;
+					};
+					04D3D094276A122C005AF98A = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 04D3D07A276A122A005AF98A;
+					};
+				};
+			};
+			buildConfigurationList = 04D3D076276A122A005AF98A /* Build configuration list for PBXProject "HospitalHealer" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 04D3D072276A122A005AF98A;
+			packageReferences = (
+				049367CF27A141F600B4723C /* XCRemoteSwiftPackageReference "CalendarView" */,
+				049367D227A1450200B4723C /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+			);
+			productRefGroup = 04D3D07C276A122A005AF98A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				04D3D07A276A122A005AF98A /* HospitalHealer */,
+				04D3D08A276A122C005AF98A /* HospitalHealerTests */,
+				04D3D094276A122C005AF98A /* HospitalHealerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		04D3D079276A122A005AF98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D3D086276A122C005AF98A /* Preview Assets.xcassets in Resources */,
+				04D3D083276A122C005AF98A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D3D089276A122C005AF98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D3D093276A122C005AF98A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4391B93F862ACDE74C51BC84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HospitalHealer-HospitalHealerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D62FA792B4557412B3155AA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HospitalHealerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F459AB7022D44B27D4E97A22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HospitalHealer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		04D3D077276A122A005AF98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D3D081276A122A005AF98A /* ContentView.swift in Sources */,
+				049367DA27A145E700B4723C /* VisitCell.swift in Sources */,
+				04D3D07F276A122A005AF98A /* HospitalHealerApp.swift in Sources */,
+				04EAF402279655F7006AA149 /* showdate.swift in Sources */,
+				04D8334B277FA35100996295 /* SignInView.swift in Sources */,
+				04EF5B922797EA670014035D /* adminpanel.swift in Sources */,
+				04EF5B902797EA030014035D /* adminloginpanel.swift in Sources */,
+				049367E227A1466100B4723C /* Date+Additions.swift in Sources */,
+				049367CE27A13F0300B4723C /* DateView.swift in Sources */,
+				049367E027A1464300B4723C /* ChangeThemeButton.swift in Sources */,
+				04D8334D277FABC400996295 /* Api.swift in Sources */,
+				049367E427A146B300B4723C /* LightDarkThemePreview.swift in Sources */,
+				04D83349277FA05A00996295 /* GetDateView.swift in Sources */,
+				049367DE27A1460B00B4723C /* VisitsListView.swift in Sources */,
+				049367D827A145D700B4723C /* Visit.swift in Sources */,
+				049367E627A146C300B4723C /* Date+Additions.swift in Sources */,
+				049367DC27A145F700B4723C /* VisitPreviewConstants.swift in Sources */,
+				049367D627A145BC00B4723C /* ExampleCalendarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D3D087276A122C005AF98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D3D090276A122C005AF98A /* HospitalHealerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04D3D091276A122C005AF98A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04D3D09A276A122C005AF98A /* HospitalHealerUITests.swift in Sources */,
+				04D3D09C276A122C005AF98A /* HospitalHealerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04D3D08D276A122C005AF98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D3D07A276A122A005AF98A /* HospitalHealer */;
+			targetProxy = 04D3D08C276A122C005AF98A /* PBXContainerItemProxy */;
+		};
+		04D3D097276A122C005AF98A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04D3D07A276A122A005AF98A /* HospitalHealer */;
+			targetProxy = 04D3D096276A122C005AF98A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04D3D09D276A122C005AF98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		04D3D09E276A122C005AF98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		04D3D0A0276A122C005AF98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28DA3C07C1617F37DABB0BCD /* Pods-HospitalHealer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HospitalHealer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HospitalHealer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = furkansay.com.HospitalHealer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04D3D0A1276A122C005AF98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0752CAA8779286438DB2F1F /* Pods-HospitalHealer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HospitalHealer/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HospitalHealer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = furkansay.com.HospitalHealer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		04D3D0A3276A122C005AF98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EA6F20BDDABAB9E76172554 /* Pods-HospitalHealerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = furkansay.com.HospitalHealerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HospitalHealer.app/HospitalHealer";
+			};
+			name = Debug;
+		};
+		04D3D0A4276A122C005AF98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE95A2D818181D0C461A8E1 /* Pods-HospitalHealerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = furkansay.com.HospitalHealerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HospitalHealer.app/HospitalHealer";
+			};
+			name = Release;
+		};
+		04D3D0A6276A122C005AF98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65E2929B2D8A1EA9916C2F5A /* Pods-HospitalHealer-HospitalHealerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = furkansay.com.HospitalHealerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HospitalHealer;
+			};
+			name = Debug;
+		};
+		04D3D0A7276A122C005AF98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6D70FE61F7F7E326DAF5DCA /* Pods-HospitalHealer-HospitalHealerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = furkansay.com.HospitalHealerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HospitalHealer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		04D3D076276A122A005AF98A /* Build configuration list for PBXProject "HospitalHealer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D3D09D276A122C005AF98A /* Debug */,
+				04D3D09E276A122C005AF98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D3D09F276A122C005AF98A /* Build configuration list for PBXNativeTarget "HospitalHealer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D3D0A0276A122C005AF98A /* Debug */,
+				04D3D0A1276A122C005AF98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D3D0A2276A122C005AF98A /* Build configuration list for PBXNativeTarget "HospitalHealerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D3D0A3276A122C005AF98A /* Debug */,
+				04D3D0A4276A122C005AF98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04D3D0A5276A122C005AF98A /* Build configuration list for PBXNativeTarget "HospitalHealerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04D3D0A6276A122C005AF98A /* Debug */,
+				04D3D0A7276A122C005AF98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		049367CF27A141F600B4723C /* XCRemoteSwiftPackageReference "CalendarView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mmick66/CalendarView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		049367D227A1450200B4723C /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		049367D027A141F600B4723C /* KDCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049367CF27A141F600B4723C /* XCRemoteSwiftPackageReference "CalendarView" */;
+			productName = KDCalendar;
+		};
+		049367D327A1450200B4723C /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 049367D227A1450200B4723C /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 04D3D073276A122A005AF98A /* Project object */;
+}
